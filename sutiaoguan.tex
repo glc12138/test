@@ -1,0 +1,162 @@
+\documentclass{hfutpaper}
+\usepackage[urlcolor=blue]{hyperref}
+\usepackage{threeparttable}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{float}
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
+\usepackage{fancyhdr}
+\titleformat{\section}{\large \heiti}{\chinese{section}、}{1em}{}
+\begin{document}
+\vspace{6em}
+\begin{center}
+\LARGE
+  \textbf{反射式速调管工作特性、波导管工作状态研究}\\
+  \vspace{1em}
+  \large
+    作者:李诚 \ 许谦\\ 学号：160904109 \ 161502423\\%姓名，学号，班级
+  专业班级：物理1601 \ 物教1601
+  \end{center}
+  \vspace{10em}
+\rule[0.1\baselineskip]{\textwidth}{0.5pt}
+\textbf{Abstract}\\
+\large
+With the working frequency of radio wave increasing continuously, the influence of the capacitance between electrons or transistors and the inductance of lead wires is very significant. The inertia of electrons and ions, i.e. the transit time effect, can not be ignored, thus limiting the increase of frequency. Microwave tubes play an important role in the development of microwave technology. Although the research on microwave transistors and solid-state sources has made rapid progress, microwave transistors are still widely used in microwave communication, microwave radar and other microwave technologies, especially those with high power and frequency. Microwave transistors can not be replaced. Klystron is one of the main types of microwave electron tubes. Klystrons can be divided into two categories: one is multi-cavity high-power and medium-power klystrons; the other is single-cavity klystrons, known as reflective klystrons. They are low-power tubes, generally at the milliwatt level, with individual klystrons reaching more than one watt. The wavelength of I is in the millimeter and millimeter wave bands.\\
+The details are as follows:\\            
+It is necessary to learn how to use basic microwave devices and understand the basic I characteristics of microwave oscillator through experiments. Master the basic measurement of frequency, power and standing wave ratio.\\
+\textbf{Keywords}：microwave \ tube\quad microwave \ device\quad microwave \ oscillator\\
+\rule[0.1\baselineskip]{\textwidth}{0.5pt}
+\clearpage
+\section{引言}
+微波是频率非常高，波长非常短的电磁波，其频率范围的划分并无统一的规定，通常将波长范围为0.1cm到100cm（相应频率为3×108 -3×1011 Hz）的电磁波划为微波波段。微波的波长决定了它的性质既不同与无线电波，也不同与光波，其独特的性质主要体现在四方面：1）高频特性，2）短波性，3）似光性，4）量子特性。微波的应用领域、研究方法和所用的传输元件、测量装置都与别的波段的电磁波不同而自成体系，微波技术发展迅速，在许多领域有重要的应用。常用的小功率微波振荡器有反射式速调管和体效应管振荡器，本实验用的是前者。
+\section{理论部分}
+\subsection{反射式速调管}
+反射式速调管是利用运动的电子将直流电源能量转换为高频振动能量的器件，是实验室中常用的小功率微波信号源。
+
+\subsubsection{速调管的工作原理}
+反射式速调管由阴极部分、谐振腔和反射极三部分组成。阴极部分发射电子形成电子束，谐振腔类似于LC振荡电路，相对于阴极有正电位，电子在栅网间来回运动形成振荡电流，进而形成振荡电场，圆环就产生相应的磁场。谐振腔反过来对电子速度进行调制。反射极相对于阴极有负电位，将穿过栅网的电子阻挡回去。
+
+电子在加速电场的作用下飞入谐振腔, 在腔中激起感应电流脉冲, 使谐振腔中发生了振荡, 因而在两个栅网间产生了一个微弱的微波电场。穿过栅网的电子受到微波电场的作用, 可能受到加速或减速, 速度发生变化。在正半周内电子被微波电场加速, 微波电场从电子取得能量。因为电子是均匀连续地从阴极发出的, 所以在正半周内电子取得的能量等于负半周内电子失去的能量。总起来说, 微波电场得到的能量为零, 微波振荡不发生。
+
+为了产生振荡, 必须在加速的半周内, 使电子完全不通过间隙, 或者通过的电子数比减速的半周时少。关键就在于要把密度均匀的电子流变成疏密相间的电子流，同时要让密集的电子团在通过栅网时正好受到微波电场的减速。上述的两点要求是通过反射极来实现的。
+
+当微波场为$-\varepsilon_{max}$时, 通过栅网的电子被减速, 当微波场为0 时, 电子速度不变, 被反射 极反射回栅网, 选择合适的反射极电压$U_{r}$, 可使不同时间通过栅网的电子同时回到栅网形成所谓群聚现象。显然, 微波场为0 时, 通过栅网的电子成为群聚中心。要使谐振腔内微波场持续的振荡并输出最大的微波功率, 必须使围绕群聚中心电子的电子群回到栅网时受到微波场的最大减速, 使微波场从运动电子中获得最大的能量。 在反射空间, 距离$S_{0}$、谐振腔电压$U_{0}$和反射极电压$U_{r}$合适的情况下, 就有可能做到: 围绕着群聚中心电子的密集电子团回到栅网时受到微波电场的最大减速, 这样微波电场从运动电子净得的能量最大。如果把电子从离开栅网至回到栅网所需的时间叫做渡越时间$\tau_{0}$, 则当群聚中心电子的渡越时间$\tau_{0}$与微波振荡周期T 满足
+
+
+\begin{center}
+$t_{0} = (n+\frac{3}{4})T, n=0,1,2...(1)$
+\end{center}
+
+
+时, 电子流给出的功率最大, 这一条件相当于振荡的位相条件,其中T为微波振荡周期。渡越时间$\tau_{0}$与电子的电量e、质量m、反射极电压$V_{R}$、以及谐振腔电压$V_{0}$等有关, 它们满足下式
+
+\begin{center}
+	$t_{0}=\frac{4s_{0}\sqrt{\frac{m_{e}U_{0}}{2e}}}{U_{0}+|U_{R}|}$\\
+\end{center}
+	由(1)(2)两式得\\
+\begin{center}
+	$\frac{4s_{0}\sqrt{\frac{m_{e}U_{0}}{2e}}}{U_{0}+|U_{R}|}f=n+\frac{3}{4}$\\
+\end{center}
+	此处，$f=\frac{1}{T}$\\
+\clearpage
+\section{实验内容}
+\subsection{实验装置}
+本次实验使用的仪器主要有速调管，晶体检波器，波长计，测量线，电源，速调管座，单向器，定向 耦合器，可调衰减器，各种终端，微安计，检流计，示波器等。其中速调管产生微波，波长计测量微波频 6 / 9 率，检波器测功率，测量线测量驻波比，各种终端形成不同的微波传输状态，示波器观察速调管调频调幅特性。
+
+
+\subsection{测量驻波比的方法}
+\subsubsection{小驻波比的测量(1.005$\le$S$\le$1.5)}
+在这种情况下，驻波波腹和波节都不尖锐，因此要多测几个驻波波节和波腹，按下式计算S的平均值：\\
+\begin{center}
+	$S=\frac{E_{max1}+E_{max2}+...+E_{maxn}}{E_{min1}+E_{min2}+...+E_{minn}}(8)$
+\end{center}
+当检波晶体管满足平方检波律时，则\\
+\begin{center}
+	$S=\frac{\sqrt{I_{max1}}+\sqrt{I_{max2}}+...+\sqrt{I_{maxn}}}{\sqrt{I_{min1}}+\sqrt{I_{min2}}+...+\sqrt{I_{minn}}}(9)$
+\end{center}
+\subsubsection{中驻波比的测量(1.5<S$\le$10)}
+\begin{center}
+	$S=\frac{E_{max}}{E_{min}}=\frac{\sqrt{I_{max}}}{\sqrt{I_{min}}}(10)$
+\end{center}
+\subsubsection{大驻波比的测量(S>10)}
+\begin{center}
+	$S=\frac{\lambda_{g}}{\pi W}(11)$
+\end{center}
+\subsubsection{波节位置和波导波长的测定}
+极小点的位置受探针影响很小，只要驻波测量器灵敏度足够高以及极小点足够尖锐，一般很容易测定。为了精确测定极小点的位置，可采用平均值法，即测极小点附近两点的坐标，取其平均值。而波导波长可由相邻两个极小点的距离决定。\\
+\clearpage
+\section{原始数据}
+\begin{table}[H]
+	\caption{电压和电流}
+	\centering
+	\begin{tabular}{cccccccccccc}
+		\toprule[1.5pt]
+		个数  & 1&2&3&4&5 & 6 & 7 &8&9&10&11\\
+		\midrule
+		$U_{r}$&47.9&49.2&50.3&51.3&52.3&53.3&54.6 &55.4&56.4&58.8&61.0\\
+		$\mu A$&0&2&4&6&8&10&12 &14&16&18&16\\
+		\midrule
+		$U_{r}$&61.9&62.7&63.3&64.2&64.8&65.7&66.7&68.2& &\\
+		$\mu A$&14&12&10 &8&6&4&2&0& &\\
+		\bottomrule[1.5pt]
+		\label{tab1}
+	\end{tabular}
+\end{table}
+\begin{figure}[H]%H表示图强制在下面，想设置浮动环境用htp
+	\centering  %插入的图片居中表示
+	\includegraphics[scale=0.7]{quxian}  %插入的图，包括JPG,PNG,PDF,EPS等，放在源文件目录下
+	\caption{功率和电压曲线}  %图片的名称
+	\label{fig1}
+\end{figure}
+\begin{table}[H]
+	\caption{电压和频率}
+	\centering
+	\begin{tabular}{|l|cccccc}
+		\toprule[1.5pt]
+		$U_{r}$&&&$f_{0}$&&\\
+		\midrule
+		100.9&2.215&2.225&2.220&2.225&2.220&2.215\\
+		\bottomrule[1.5pt]
+%		\label{tab1}
+	\end{tabular}
+\end{table}
+查表得:\\
+\begin{table}[H]
+	\caption{}
+	\centering
+	\begin{tabular}{cccc}
+		\toprule[1.5pt]
+		A:&28.0&9600Hz&4\\
+		\midrule
+		P'&100.4&60$\mu A$&\\
+		\bottomrule[1.5pt]
+%		\label{tab1}
+	\end{tabular}
+\end{table}
+\clearpage
+\section{数据处理与分析}
+\subsection{微波频率的测量}
+由表2的数据\\
+$\overline{f_{0}}=\frac{\sum_{i=1}^{6}f_{0}}{6}=2.22$\\
+$S=\sqrt{\frac{\sum_{i=1}^6(f_{0}-\overline{f_{0}})^2}{5}}=0.00125$\\
+$\overline{x}+Gn\cdot S=2.22+0.00125\times 1.82$ -----------经验证符合\\
+$\therefore f_{0}\thickapprox 2.22 MHz$\\
+\subsubsection{微波功率的测量}
+由表3的数据\\
+$A=10lg(p/p')$\\
+$4=10lg(p/2.9mw)$\\
+$10^{\frac{2}{5}}\times 2.9mw \thickapprox 7.284 mw$\\
+\subsection{驻波比的测量}
+数据略\\
+$\rho=\frac{\sqrt{46}+\sqrt{46.1}+\sqrt{46.2}+\sqrt{46}+\sqrt{46.1}}{\sqrt{36.2}+\sqrt{36}+\sqrt{36.1}+\sqrt{36.2}+\sqrt{36}+\sqrt{36}}$\\
+$=1.13$\\
+$\lambda_{g}=(82.5+105)-(73.7+96.3)$\\
+$=17.5$\\
+\section{实验结论}
+\begin{thebibliography}{9}%宽度9
+\bibitem{bib:one} 扬州大学物理科学与技术学院.近代物理实验.2019,02:144-148\upcite{bib:one}.
+\bibitem{bib:two} 陈振国编，微波技术基础与应用，北京，北京邮电大学出版社\upcite{bib:two}. 
+\bibitem{bib:three} 鲍家善等著，微波原理，北京，高等教育出版社，1985\upcite{bib:three}.
+\bibitem{bib:four}吴思诚，近代物理实验（第二版），北京，北京邮电大学出版社，1995\upcite{bib:four}.
+\end{thebibliography}
+\end{document}
